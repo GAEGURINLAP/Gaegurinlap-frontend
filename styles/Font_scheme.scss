@@ -1,0 +1,281 @@
+$text_spacing: -0.02em;
+$numb_spacing: -0.04em;
+
+// letter : 기본 텍스트 자간 / numb : 숫자인 경우
+// --------------------------------------------------------------
+
+$bold_weight: 700;
+$semibold_weight: 600;
+$medium_weight: 500;
+$regular_weight: 400;
+
+// font weight
+// --------------------------------------------------------------
+
+@font-face {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 400;
+	src: url(../src/assets/fonts/Pretendard-Regular.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 500;
+	src: url(../src/assets/fonts/Pretendard-Medium.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 600;
+	src: url(../src/assets/fonts/Pretendard-SemiBold.otf) format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: 600;
+	src: url(../src/assets/fonts/Pretendard-SemiBold.otf) format("opentype");
+}
+
+// font weight 강제 지정
+// --------------------------------------------------------------
+
+@mixin f_h1_semibold($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $semibold_weight;
+	font-size: 32px;
+	line-height: 38px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h1_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 32px;
+	line-height: 38px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h2_semibold($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $semibold_weight;
+	font-size: 24px;
+	line-height: 29px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h2_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 24px;
+	line-height: 29px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h2_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 24px;
+	line-height: 29px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h3_semibold($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $semibold_weight;
+	font-size: 20px;
+	line-height: 24px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h3_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 20px;
+	line-height: 24px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_h3_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 20px;
+	line-height: 24px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle1_semibold($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $semibold_weight;
+	font-size: 18px;
+	line-height: 21px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle1_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 18px;
+	line-height: 21px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle1_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 18px;
+	line-height: 21px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle2_semibold($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $semibold_weight;
+	font-size: 16px;
+	line-height: 19px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle2_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 16px;
+	line-height: 19px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_subtitle2_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 16px;
+	line-height: 19px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_body_medium($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $medium_weight;
+	font-size: 14px;
+	line-height: 17px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_body_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 14px;
+	line-height: 17px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_caption1_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 12px;
+	line-height: 18px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $numb_spacing;
+	}
+}
+
+@mixin f_caption2_regular($lan_type) {
+	font-family: "Pretendard";
+	font-style: normal;
+	font-weight: $regular_weight;
+	font-size: 10px;
+	line-height: 12px;
+	@if $lan_type == "text" {
+		letter-spacing: $text_spacing;
+	} @else {
+		letter-spacing: $text_spacing;
+	}
+}
+
+// font style
+// --------------------------------------------------------------

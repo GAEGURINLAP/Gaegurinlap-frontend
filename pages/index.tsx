@@ -6,7 +6,7 @@ const Home = () => {
 	return (
 		<>
 			<Head>
-				<title>BP363</title>
+				<title>GAEGURINLAB</title>
 				<meta name="description" content="Byung&Park Design Achive" />
 			</Head>
 			<IndexLayout />

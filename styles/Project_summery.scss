@@ -1,0 +1,68 @@
+@import "/styles/Font_scheme.scss";
+
+.ProjectSummery {
+	display: flex;
+	flex-direction: column;
+	gap: 72px;
+	margin-bottom: 120px;
+	&__card {
+		display: flex;
+		flex-direction: row;
+		gap: 16px;
+		&__main {
+			display: flex;
+			flex-direction: column;
+			gap: 32px;
+			width: 900px;
+			&__content {
+				display: flex;
+				flex-direction: column;
+				gap: 16px;
+				&__title {
+					display: flex;
+					flex-direction: column;
+					gap: 12px;
+					&-main {
+						font-size: 48px;
+						letter-spacing: -0.02em;
+						font-weight: 500;
+					}
+					&__subtitle {
+						display: flex;
+						flex-direction: row;
+						gap: 8px;
+						@include f_subtitle2_regular("text");
+						color: white;
+						&-tag {
+							color: #cfcfcf;
+						}
+						&__designer {
+							display: flex;
+							flex-direction: row;
+							gap: 2px;
+							&-name {
+								// text-decoration: underline;
+								&:hover {
+									cursor: pointer;
+									color: #fe3b99;
+								}
+							}
+						}
+					}
+				}
+				&-body {
+					@include f_body_regular("text");
+					line-height: 21px;
+					& span {
+						margin-left: 8px;
+						text-decoration: underline;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		&__sub {
+			width: 524px;
+		}
+	}
+}

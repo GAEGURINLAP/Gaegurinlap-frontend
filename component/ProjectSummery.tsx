@@ -10,7 +10,7 @@ const ProjectSummery__card = () => {
 			<div className="ProjectSummery">
 				<div className="ProjectSummery__card">
 					<div className="ProjectSummery__card__main">
-						<Image src={PlusX_H.src} alt="" width="900px" height="506px" />
+						<Image src={PlusX_H} alt="" width="900px" height="506px" />
 						<div className="ProjectSummery__card__main__content">
 							<div className="ProjectSummery__card__main__content__title">
 								<div className="ProjectSummery__card__main__content__title-main">
@@ -44,17 +44,12 @@ const ProjectSummery__card = () => {
 						</div>
 					</div>
 					<div className="ProjectSummery__card__sub">
-						<Image src={PlusX_V.src} alt="" width="520px" height="764px" />
+						<Image src={PlusX_V} alt="" width="520px" height="764px" />
 					</div>
 				</div>
 				<div className="ProjectSummery__card">
 					<div className="ProjectSummery__card__main">
-						<Image
-							src={ProjectThumb_H.src}
-							alt=""
-							width="900px"
-							height="506px"
-						/>
+						<Image src={ProjectThumb_H} alt="" width="900px" height="506px" />
 						<div className="ProjectSummery__card__main__content">
 							<div className="ProjectSummery__card__main__content__title">
 								<div className="ProjectSummery__card__main__content__title-main">
@@ -88,12 +83,7 @@ const ProjectSummery__card = () => {
 						</div>
 					</div>
 					<div className="ProjectSummery__card__sub">
-						<Image
-							src={ProjectThumb_V.src}
-							alt=""
-							width="520px"
-							height="764px"
-						/>
+						<Image src={ProjectThumb_V} alt="" width="520px" height="764px" />
 					</div>
 				</div>
 			</div>

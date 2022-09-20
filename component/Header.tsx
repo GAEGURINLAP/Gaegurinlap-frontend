@@ -22,7 +22,7 @@ const Header = () => {
 	return (
 		<div className="Header">
 			<div className="Header__content">
-				<Image src={GAEGURINLAB_LOGO.src} alt="" width="200px" height="52px" />
+				<Image src={GAEGURINLAB_LOGO} alt="" width="200px" height="52px" />
 				{/* <BP363_LOGO /> */}
 
 				<div className="Header__menu">
@@ -34,8 +34,8 @@ const Header = () => {
 					<div className="Header__menu-sns">
 						{/* <SNS_INSTAGRAM />
 					<SNS_BEHANCE /> */}
-						<Image src={SNS_INSTAGRAM.src} alt="" width="24px" height="24px" />
-						<Image src={SNS_BEHANCE.src} alt="" width="24px" height="24px" />
+						<Image src={SNS_INSTAGRAM} alt="" width="24px" height="24px" />
+						<Image src={SNS_BEHANCE} alt="" width="24px" height="24px" />
 					</div>
 				</div>
 			</div>

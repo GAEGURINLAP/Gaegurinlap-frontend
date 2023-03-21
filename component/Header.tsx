@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Image from "next/image";
 
 import MobileMenu from "../component/MobileMenu";
@@ -20,8 +22,14 @@ const Header = () => {
 		},
 	];
 
+	const [isMenuClick, setIsMenuClick] = useState(false);
+
 	return (
 		<>
+		<MobileMenu 
+			visible={isMenuClick}
+			onClose={() => setIsMenuClick(false)}
+		/>
 		<div className="Header">
 			<div className="Header__content">
 				<Image src={GAEGURINLAB_LOGO} alt="" width="200px" height="52px" />
@@ -43,10 +51,15 @@ const Header = () => {
 			</div>
 		</div>
 		<div className="Header-Mobile">
-			<MobileMenu />
 			<div className="Header-Mobile__content">
 				<Image src={GAEGURINLAB_LOGO} alt="" width="148px" height="20px" />
-				<Image src={LINE_THREE} alt="" width="24px" height="24px" />
+				<Image 
+					src={LINE_THREE} 
+					alt="" 
+					width="24px" 
+					height="24px" 
+					onClick={() => setIsMenuClick(true)}
+				/>
 			</div>
 		</div>
 		</>

@@ -1,3 +1,5 @@
+import useState from 'react';
+
 import Image from "next/image";
 
 import GAEGURINLAB_LOGO from "/src/assets/Images/logo/GAEGURINLAB_logo.svg";
@@ -5,7 +7,7 @@ import SNS_INSTAGRAM from "src/assets/Images/sns/icon-Instagram-24.svg";
 import SNS_BEHANCE from "src/assets/Images/sns/icon-Behance-24.svg";
 import X_Button from "src/assets/Images/common/icon-x-mono.svg";
 
-const MobileMenu = () => {
+const MobileMenu = ({visible,onClose}) => {
     const gnbList = [
 		{
 			text: "About",
@@ -18,12 +20,24 @@ const MobileMenu = () => {
 		},
 	];
 
+    // const [isMenuClick, setIsMenuClick] = useState(false);
+
 	return (
-		<div className="MobileMenu">
+        <>
+        {
+        visible ?
+        <>
+		<div className={visible ? "MobileMenu" : "MobileMenu-hidden"}>
             <div className="MobileMenu__content">
                 <div className="MobileMenu__content__title">
                     <Image src={GAEGURINLAB_LOGO} alt="" width="148px" height="20px" />
-                    <Image src={X_Button} alt="" width="24px" height="24px" />
+                    <Image 
+                        src={X_Button} 
+                        alt=""
+                        width="24px" 
+                        height="24px"
+                        onClick={onClose}
+                    />
                 </div>
                 <div className="MobileMenu__content__body">
                     <div className="MobileMenu__content__body__menu">
@@ -40,6 +54,10 @@ const MobileMenu = () => {
                 </div>
             </div>
 		</div>
+        </>
+        :null
+        }
+        </>
 	);
 };
 

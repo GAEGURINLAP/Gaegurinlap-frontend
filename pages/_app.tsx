@@ -1,5 +1,7 @@
 import "../styles/globals.scss";
 import "../styles/Font_scheme.scss";
+import "../styles/Resolution.scss";
+
 
 import "../styles/Index_layout.scss";
 import "../styles/Header.scss";

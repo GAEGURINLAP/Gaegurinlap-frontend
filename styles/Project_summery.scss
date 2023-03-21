@@ -1,4 +1,9 @@
 @import "/styles/Font_scheme.scss";
+@import "./Resolution.scss";
+
+.ProjectSummery-Mobile {
+  display: none;
+}
 
 .ProjectSummery {
 	display: flex;
@@ -65,4 +70,77 @@
 			width: 524px;
 		}
 	}
+}
+
+
+@media only screen and (max-width: $mobile_screen)
+{
+	.ProjectSummery-Mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    
+    
+    &-card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &__main {
+        &__content {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          &__title {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            &__main {
+              font-size: 24px;
+              font-weight: 500;
+              letter-spacing: -0.02em;
+            }
+            &__subtitle {
+              font-size: 12px;
+              width: 100%;
+              letter-spacing: -0.02em;
+              display: flex;
+              gap: 8px;
+              &-tag {
+                color: #cfcfcf;
+              }
+              &__designer {
+                display: flex;
+                gap: 4px;
+                &-name {
+                  text-decoration: underline;
+                  color: #fe3b99;
+                  // &:hover {
+                  //   cursor: pointer;
+                  //   color: #fe3b99;
+                  // }
+                }
+              }
+            }
+          }
+          &-body {
+            font-size: 14px;
+            letter-spacing: -0.02em;
+            line-height: 21px;
+          }
+        }
+      }
+
+    }
+
+    
+  }
+
+  .ProjectSummery {
+    display: none;
+    
+  }
+  
 }

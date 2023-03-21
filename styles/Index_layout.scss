@@ -1,4 +1,15 @@
+@import "./Resolution.scss";
+
 .IndexLayout {
-	max-width: 1440px;
+	max-width: 1080px;
 	margin: 0 auto;
+}
+
+
+@media only screen and (max-width: $desktop_screen)
+{
+	.IndexLayout {
+	width: 100%;
+    padding: 0 24px;
+  }
 }

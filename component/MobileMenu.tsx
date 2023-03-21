@@ -1,4 +1,4 @@
-import useState from 'react';
+import useState from "react";
 
 import Image from "next/image";
 
@@ -7,8 +7,8 @@ import SNS_INSTAGRAM from "src/assets/Images/sns/icon-Instagram-24.svg";
 import SNS_BEHANCE from "src/assets/Images/sns/icon-Behance-24.svg";
 import X_Button from "src/assets/Images/common/icon-x-mono.svg";
 
-const MobileMenu = ({visible,onClose}) => {
-    const gnbList = [
+const MobileMenu = ({ visible, onClose }: any) => {
+	const gnbList = [
 		{
 			text: "About",
 		},
@@ -20,44 +20,55 @@ const MobileMenu = ({visible,onClose}) => {
 		},
 	];
 
-    // const [isMenuClick, setIsMenuClick] = useState(false);
+	// const [isMenuClick, setIsMenuClick] = useState(false);
 
 	return (
-        <>
-        {
-        visible ?
-        <>
-		<div className={visible ? "MobileMenu" : "MobileMenu-hidden"}>
-            <div className="MobileMenu__content">
-                <div className="MobileMenu__content__title">
-                    <Image src={GAEGURINLAB_LOGO} alt="" width="148px" height="20px" />
-                    <Image 
-                        src={X_Button} 
-                        alt=""
-                        width="24px" 
-                        height="24px"
-                        onClick={onClose}
-                    />
-                </div>
-                <div className="MobileMenu__content__body">
-                    <div className="MobileMenu__content__body__menu">
-                        {gnbList.map((i, idx) => (
-                            <div className="MobileMenu__content__body__menu-list" key={idx}>
-                                {i.text}
-                            </div>
-                        ))}
-                    </div>
-                    <div className="MobileMenu__content__body-sns">
-                        <Image src={SNS_INSTAGRAM} alt="" width="24px" height="24px" />
-						<Image src={SNS_BEHANCE} alt="" width="24px" height="24px" />
-                    </div>
-                </div>
-            </div>
-		</div>
-        </>
-        :null
-        }
-        </>
+		<>
+			{visible ? (
+				<>
+					<div className={visible ? "MobileMenu" : "MobileMenu-hidden"}>
+						<div className="MobileMenu__content">
+							<div className="MobileMenu__content__title">
+								<Image
+									src={GAEGURINLAB_LOGO}
+									alt=""
+									width="148px"
+									height="20px"
+								/>
+								<Image
+									src={X_Button}
+									alt=""
+									width="24px"
+									height="24px"
+									onClick={onClose}
+								/>
+							</div>
+							<div className="MobileMenu__content__body">
+								<div className="MobileMenu__content__body__menu">
+									{gnbList.map((i, idx) => (
+										<div
+											className="MobileMenu__content__body__menu-list"
+											key={idx}
+										>
+											{i.text}
+										</div>
+									))}
+								</div>
+								<div className="MobileMenu__content__body-sns">
+									<Image
+										src={SNS_INSTAGRAM}
+										alt=""
+										width="24px"
+										height="24px"
+									/>
+									<Image src={SNS_BEHANCE} alt="" width="24px" height="24px" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</>
+			) : null}
+		</>
 	);
 };
 

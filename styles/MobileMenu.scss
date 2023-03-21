@@ -1,0 +1,43 @@
+@import "./Font_scheme.scss";
+
+.MobileMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    z-index: 99999;
+    background-color: #36503B;
+
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        // padding: 0 16px;
+        &__title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 48px 16px 16px;
+            
+        }
+        &__body {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+            &__menu {
+                &-list {
+                    padding: 16px 16px;
+                    @include f_h3_medium('text');
+                }
+            }
+            &-sns {
+                display: flex;
+                justify-content: right;
+                gap: 16px;
+                padding: 0 16px;
+            }
+        }
+     
+    }
+}

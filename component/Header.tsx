@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import BP363_LOGO from "/src/assets/Images/logo/BP363_logo.svg";
-import BP363_LOGO_2 from "/src/assets/Images/logo/BP363_logo_2.svg";
+import MobileMenu from "../component/MobileMenu";
+
 import GAEGURINLAB_LOGO from "/src/assets/Images/logo/GAEGURINLAB_logo.svg";
 import SNS_INSTAGRAM from "src/assets/Images/sns/icon-Instagram-24.svg";
 import SNS_BEHANCE from "src/assets/Images/sns/icon-Behance-24.svg";
@@ -43,6 +43,7 @@ const Header = () => {
 			</div>
 		</div>
 		<div className="Header-Mobile">
+			<MobileMenu />
 			<div className="Header-Mobile__content">
 				<Image src={GAEGURINLAB_LOGO} alt="" width="148px" height="20px" />
 				<Image src={LINE_THREE} alt="" width="24px" height="24px" />

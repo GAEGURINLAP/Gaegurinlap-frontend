@@ -1,5 +1,6 @@
 import Header from "../component/Header";
 import ProjectSummery from "../component/ProjectSummery";
+import Footer from "../component/Footer";
 
 const IndexLayout = () => {
 	return (
@@ -7,6 +8,7 @@ const IndexLayout = () => {
 			<div className="IndexLayout">
 				<Header />
 				<ProjectSummery />
+				<Footer />
 			</div>
 		</>
 	);

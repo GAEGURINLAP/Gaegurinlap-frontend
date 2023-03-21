@@ -6,6 +6,7 @@ import "../styles/Resolution.scss";
 import "../styles/Index_layout.scss";
 import "../styles/Header.scss";
 import "../styles/Project_summery.scss";
+import "../styles/Footer.scss";
 
 import type { AppProps } from "next/app";
 

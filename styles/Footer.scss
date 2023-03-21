@@ -1,0 +1,51 @@
+@import "/styles/Font_scheme.scss";
+@import "./Resolution.scss";
+
+.Footer-Mobile {
+    display: none;
+}
+
+.Footer {
+    display: none;
+}
+
+@media only screen and (max-width: $mobile_screen)
+{
+    .Footer-Mobile {
+        display: flex;
+        width: 100%;
+        margin-top: 64px;
+        
+        &__content {
+            width: 100%;
+        display: flex;
+        padding: 48px 0;
+        justify-content: space-between;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                &-main {
+                    @include f_body_regular('text');
+                }
+                &__sub {
+                    @include f_caption1_regular('text');
+                    display: flex;
+                    flex-direction: column;
+                    // gap: 4px;
+                }
+            }
+
+            &-sns {
+                display: flex;
+                justify-content: row;
+                gap: 16px;
+            }
+        }
+    }
+
+    .Footer {
+        display: none;
+    }
+}

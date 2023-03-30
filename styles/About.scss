@@ -1,0 +1,45 @@
+@import "/styles/Font_scheme.scss";
+@import "./Resolution.scss";
+
+.About {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+
+        &__title {
+            // display: flex;
+            @include f_h2_regular('text');
+            width: 360px;
+        }
+
+        &__body {
+            width: 100%;
+            @include f_subtitle2_regular('text');
+            line-height: 24px;
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+
+            &__three {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                width: 100%;
+
+                &__title {
+                    @include f_subtitle1_medium('text');
+                }
+
+                &__list {
+                color: #d0d0d0;
+                }
+            }
+        }
+    }
+ 
+    
+}

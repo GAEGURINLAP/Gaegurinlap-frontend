@@ -6,8 +6,38 @@
 }
 
 .Footer {
-    display: none;
-}
+        display: flex;
+        width: 100%;
+        margin-top: 64px;
+        
+        &__content {
+            width: 100%;
+        display: flex;
+        padding: 48px 0;
+        justify-content: space-between;
+
+            &__info {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                &-main {
+                    @include f_subtitle2_regular('text');
+                }
+                &__sub {
+                    @include f_body_regular('text');
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                }
+            }
+
+            &-sns {
+                display: flex;
+                justify-content: row;
+                gap: 16px;
+            }
+        }
+    }
 
 @media only screen and (max-width: $mobile_screen)
 {
